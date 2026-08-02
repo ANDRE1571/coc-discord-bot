@@ -5,7 +5,7 @@ import { Clan, ClashApiErrorPayload, CurrentWar, Player } from './clash.types';
 
 const logger = createLogger('ClashService');
 
-const BASE_URL = 'https://cocproxy.royaleapi.dev/v1';
+const BASE_URL = 'https://api.clashofclans.com/v1';
 
 /** Endpoints that legitimately return 404 for "not in war" / private war log, etc. */
 const RETRYABLE_STATUS_CODES = new Set([408, 429, 500, 502, 503, 504]);
